@@ -2,7 +2,7 @@
 http://education.launchcode.org/web-fundamentals/assignments/user-signup/
 
 Project Setup
-To get started on this assignment, first create a repo (local and remote) called user-signup and then activate your virtual environment using source activate flask-env. If you need reminders on how to set up a new repository, review the instructions for Web Caesar.
+To get started on this assignment, first create a repo (local and remote) called user-signup and then activate your virtual environment using source activate flask-env. If you need reminders on how to set up a new repository, review the instructions for Web Caesar.(http://education.launchcode.org/web-fundamentals/assignments/web-caesar/#git-repository-setup)
 
 Next, get your project file structure set up by adding a main.py file and adding a directory for the template files you will make below.
 
