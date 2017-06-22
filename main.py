@@ -6,34 +6,33 @@ app.config['DEBUG'] = True
 @app.route("/")
 form = """
 <!DOCTYPE html>
-
 <html>
     <head>
         <style>
-            form {
-                background-color: #eee;
+            form {{
+                background-color: #eeeeee;
                 padding: 20px;
                 margin: 0 auto;
                 width: 540px;
                 font: 16px sans-serif;
                 border-radius: 10px;
-            }
-            textarea {
+            }}
+            textarea {{
                 margin: 10px 0;
                 width: 540px;
                 height: 120px;
-            }
+            }}
         </style>
     </head>
     <body>
       <!-- create your form here -->
-    <form action="/add" method="post">
-        <label>
-            <input type="text" name="rot"/>
-            to my watchlist.
+    <form method="post">
+        <label>Rotate by:
+            <input type="text" name="rot" value="0"/>
         </label>
-        <input type="submit" value="Add It"/>
-    </form>
+        <br><br>
+            <textarea name="text">{0}</textarea>
+            <input type="submit" value="Submit Query"/>
     </body>
 </html>
 """
