@@ -38,7 +38,7 @@ def signup():
     if not (username_error or password_error or c_password_error or email_error):
         return redirect('/welcome?username=' + username)
     else:
-        return render_template('forms.html',
+        return render_template('index.html',
             username = username,
             email = email,
             username_error = username_error,
@@ -55,7 +55,7 @@ def welcome():
 
 @app.route("/")
 def index():
-    return render_template('forms.html')
+    return render_template('index.html')
 
 
 app.run()
